@@ -1,0 +1,10 @@
+body {
+  height: 100%;
+  max-width:960px;
+  margin: 0 auto !important;
+}
+div {
+  /* float: left; */
+  text-align: center;
+  border-bottom: 0px;
+}
