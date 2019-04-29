@@ -1,7 +1,4 @@
 #container {
-  /* width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,17 +13,15 @@
 
 #side-bar {
   flex: 1 20.83%;
-  /* width: 20.83%; */
   line-height: 600px;
   margin: 0px;
   background-color: blueviolet;
 }
 #content {
 flex: 1 79.17%;
- /* width: 79.17%; */
 }
 .middle {
-  flex: 1 100%;
+  display: flex;
   flex-wrap: wrap;
 }
 #c, #d {
@@ -57,7 +52,6 @@ flex: 1 79.17%;
 }
 
 #footer {
-  width: 79.17%;
   line-height: 150px;
   background-color: rgb(235, 55, 85);
 }
@@ -66,30 +60,29 @@ flex: 1 79.17%;
 /* Mobile view */
 
 @media only screen and (min-width: 400px) and (max-width: 560px) {
-  div {
-    float: left;
-  }
-  div:after {
-    content: "";
-    display: table;
-    clear: both;
+  #container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   #header {
-      width: 100%;
+      flex: 1 100%;
       line-height: 75px;
       background-color: blueviolet;
   }
   #side-bar {
-      width: 100%;
+      flex: 1 100%;
       line-height: 150px;
       margin: 0px;
       background-color: palegreen;
   }
   #content {
-      width: 100%;
+      flex: 1 100%;
   }
   .middle {
-      width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
   #c, #d {
       width:100%;
@@ -118,7 +111,6 @@ flex: 1 79.17%;
       background-color: green;
   }
   #footer {
-      width: 100%;
       line-height: 80px;
   }
 
