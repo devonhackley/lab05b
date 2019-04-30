@@ -56,16 +56,43 @@ flex: 1 79.17%;
   background-color: rgb(235, 55, 85);
 }
 
+/* Tablet view */
+@media only screen and (min-width: 560px) and (max-width: 960px) {
+  #header {
+    flex: 1 100%;
+    line-height: 75px;
+    background-color: palegreen;
+  }
+  #side-bar {
+    flex: 1 100%;
+    line-height: 150px;
+    margin: 0px;
+    background-color: blueviolet;
+  }
+  #c {
+    background-color: red;
+  }
+  #d {
+    background-color: yellow;
+  }
+  #e {
+    background-color: aquamarine;
+  }
+  #f {
+    background-color: rgb(22, 82, 97);
+  }
+  #g {
+    background-color: orange;
+  }
+  #h {
+    background-color: fuchsia;
+  }
+}
+
 
 /* Mobile view */
 
 @media only screen and (min-width: 400px) and (max-width: 560px) {
-  #container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
   #header {
       flex: 1 100%;
       line-height: 75px;
